@@ -1,0 +1,91 @@
+/**
+ * Стили карты (шорткод [yandex_map] и виджет «Яндекс.Карта»).
+ * Плагин подключает этот файл только на страницах, где есть карта.
+ */
+
+.ymap {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  overscroll-behavior: contain;
+  background: #edf2f7;
+  line-height: 0;
+}
+
+.ymap__caption {
+  margin: 0 0 8px;
+  line-height: 1.4;
+  color: #1f2329;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ymap__notice {
+  margin: 0;
+  padding: 24px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #5b6270;
+  background: #f5f6f8;
+  border: 1px dashed #c4c9d2;
+  border-radius: 8px;
+
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.ymap--empty {
+  height: 220px;
+  line-height: 1.45;
+}
+
+.ymap .ymap__load {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5b6270;
+  background: #f5f6f8;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 13px;
+}
+
+.ymap--ready .ymap__load {
+  display: none;
+}
+
+.ymap__cluster-item {
+  padding: 6px 2px;
+  border-bottom: 1px solid #eef0f3;
+}
+
+.ymap__cluster-item:last-child {
+  border-bottom: none;
+}
+
+.ymap__cluster-item-title {
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.ymap__cluster-item-body {
+  margin-top: 2px;
+  color: #5b6270;
+  font-size: 13px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
